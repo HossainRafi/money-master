@@ -17,9 +17,60 @@
     />
   </head>
   <body>
-    <header class="bg-primary bg-opacity-25 text-center py-2">
+    <!-- Header Start -->
+    <header class="bg-primary bg-opacity-50 text-center py-1">
       <h2 class="display-5 fw-bold">My Accounts Calculation</h2>
     </header>
+
+    <!-- Section Start -->
+    <section class="bg-primary bg-opacity-25">
+      <div class="p-4">
+        <div class="d-flex flex-column flex-md-row">
+          <!-- Image Section -->
+          <div class="justify-content-center align-items-center col-md-6 me-5">
+            <img class="rounded-3 img-fluid" src="./image/image-2.jpg" alt="" />
+          </div>
+
+          <!-- Account Section -->
+          <div class="bg-info bg-opacity-25 p-3 rounded-3">
+
+              <!-- Income Part -->
+            <div>
+              <h4 class="text-center pb-2">Income</h4>
+              <div class="d-flex align-items-center">
+                <p class="me-3">Income:</p>
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+
+            <!-- Expenses Part -->
+            <div>
+              <h4 class="text-center pt-3 pb-2">Expenses</h4>
+              <div class="d-flex align-items-center">
+                <p class="me-3">Food:</p>
+                <input class="form-control" type="text" />
+              </div>
+              <div class="d-flex align-items-center py-2">
+                <p class="me-3">Rent:</p>
+                <input class="form-control" type="text" />
+              </div>
+              <div class="d-flex align-items-center py-2">
+                <p class="me-3">Clothes:</p>
+                <input class="form-control" type="text" />
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary">Calculate</button>
+              </div>
+              <div class="text-center">
+                <h4 class="py-2">Total Expenses: 00</h4>
+                <h4 class="py-2">Balance: 00</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section End -->
 
     <!-- ====================
         Scripts Goes Here
