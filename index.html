@@ -39,7 +39,7 @@
               <h4 class="text-center pb-2">Income</h4>
               <div class="d-flex align-items-center">
                 <p class="me-3">Income:</p>
-                <input class="form-control" type="text" value="20,000"/>
+                <input id="income" class="form-control" type="text" />
               </div>
             </div>
 
@@ -47,23 +47,23 @@
             <div>
               <h4 class="text-center pt-3 pb-2">Expenses</h4>
               <div class="d-flex align-items-center">
-                <p id="food-cost" class="me-3">Food:</p>
-                <input class="form-control" type="text" />
+                <p class="me-3">Food:</p>
+                <input id="food-cost"  class="form-control" type="text" />
               </div>
               <div class="d-flex align-items-center py-2">
-                <p id="rent-cost" class="me-3">Rent:</p>
-                <input class="form-control" type="text" />
+                <p class="me-3">Rent:</p>
+                <input id="rent-cost" class="form-control" type="text" />
               </div>
               <div class="d-flex align-items-center py-2">
-                <p id="cloth-cost" class="me-3">Clothes:</p>
-                <input class="form-control" type="text" />
+                <p class="me-3">Clothes:</p>
+                <input id="cloth-cost" class="form-control" type="text" />
               </div>
               <div class="text-center">
-                <button type="button" class="btn btn-primary">Calculate</button>
+                <button id="calculate" type="button" class="btn btn-primary">Calculate</button>
               </div>
               <div class="text-center">
-                <h4 class="py-2">Total Expenses: 00</h4>
-                <h4 class="py-2">Balance: 00</h4>
+                <h4 class="py-2">Total Expenses: <span id="expenses">00</span> </h4>
+                <h4 class="py-2">Balance: <span id="remain-balance">00</span> </h4>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
     <!-- ====================
         Scripts Goes Here
     ==================== -->
-    <script src="script.js"></script>
+    <script src="./script/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
