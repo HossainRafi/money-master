@@ -3,6 +3,12 @@ const myFoodCostInput = document.getElementById("food-cost");
 const myRentCostInput = document.getElementById("rent-cost");
 const myClothCostInput = document.getElementById("cloth-cost");
 
+const balance = document.getElementById("remain-balance");
+
+const savings = document.getElementById("savings");
+const savingAmount = document.getElementById("saving-amount");
+const remainAmount = document.getElementById("remain-amount");
+
 // Click event
 document.getElementById("calculate").addEventListener("click", function () {
   //Get income balance
@@ -32,10 +38,20 @@ document.getElementById("calculate").addEventListener("click", function () {
   // Total cost
   const myTotalCost = foodCost + rentCost + clothCost;
 
+  if (myIncome < myTotalCost) {
+    return alert("Expense can not more than income");
+  }
   // Expenses and remaining balance
+
   const myExpense = document.getElementById("cost");
   myExpense.innerText = myTotalCost;
 
-  const Balance = document.getElementById("remain-balance");
-  Balance.innerText = income - myTotalCost;
+  
+  balance.innerText = income - myTotalCost;
 });
+
+ function savingBtn() {
+  const amountPercent = (myIncomeInput.value / 100) * savings.value;
+    savingAmount.innerText = amountPercent.toFixed(2);
+    remainAmount.innerText = balance.innerText - savingAmount.innerText;
+};
